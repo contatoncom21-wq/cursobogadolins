@@ -5,22 +5,46 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Vídeo</title>
   <style>
-    body { margin:0; background:#0b0b0b; display:grid; place-items:center; min-height:100vh; }
-    .wrap { width:min(960px, 92vw); aspect-ratio:16/9; position:relative; }
-    .wrap iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+    body { 
+      margin:0; 
+      background:#0b0b0b; 
+      display:grid; 
+      place-items:center; 
+      min-height:100vh; 
+    }
+    .wrap { 
+      width:min(960px, 92vw); 
+      aspect-ratio:16/9; 
+      position:relative; 
+    }
+    .wrap iframe { 
+      position:absolute; 
+      inset:0; 
+      width:100%; 
+      height:100%; 
+      border:0; 
+    }
     /* Botão de play opcional (só visual). Remova se não quiser. */
     .overlay {
-      position:absolute; inset:0; display:grid; place-items:center; pointer-events:none;
+      position:absolute; 
+      inset:0; 
+      display:grid; 
+      place-items:center; 
+      pointer-events:none;
     }
     .overlay .dot {
-      width:84px; height:84px; border-radius:999px; background:#ffffff22; backdrop-filter: blur(2px);
+      width:84px; 
+      height:84px; 
+      border-radius:999px; 
+      background:#ffffff22; 
+      backdrop-filter: blur(2px);
     }
   </style>
 </head>
 <body>
   <div class="wrap">
     <iframe
-      src="https://www.youtube.com/watch?v=X4oCiuwNiXk"
+      src="https://www.youtube.com/embed/X4oCiuwNiXk?rel=0&controls=0&modestbranding=1&iv_load_policy=3&fs=0&disablekb=1&playsinline=1"
       title="Vídeo incorporado"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
     </iframe>
